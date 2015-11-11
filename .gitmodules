@@ -1,0 +1,6 @@
+[submodule "iconizer"]
+	path = iconizer
+	url = https://weijia:123456rich@github.com/weijia/iconizer.git
+[submodule "libtool"]
+	path = libtool
+	url = https://github.com/weijia/libtool.git
