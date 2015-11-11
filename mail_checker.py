@@ -6,15 +6,16 @@ import sys
 
 my_path = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.join(my_path, "libtool"))
-from libtool import include
-include("iconizer")
+print sys.path
+from libtool.libtool import include
+include("iconizer/iconizer")
 from iconizer import Iconizer
 
 log = logging.getLogger(__name__)
 
 
 def main():
-    Iconizer().execute({"django_server": ["manage.py", "runserver"]})
+    Iconizer().execute({"mail checker": ["outlook_checker.py",]})
 
 
 if __name__ == '__main__':
