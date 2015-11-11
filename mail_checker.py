@@ -6,9 +6,10 @@ import sys
 
 my_path = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.join(my_path, "libtool"))
-print sys.path
-from libtool.libtool import include
-include("iconizer/iconizer")
+#print sys.path
+from libtool.libtool import append
+append("iconizer")
+#print sys.path
 from iconizer import Iconizer
 
 log = logging.getLogger(__name__)
